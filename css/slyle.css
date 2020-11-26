@@ -18,7 +18,7 @@ body{
     --blur-header-color: rgba(255, 255, 255, 0.5);
     --blur-contact-link: rgba(255, 255, 255, 0.5);
     --text-bread-color-active: #333;
-    --text-bread-color: rgba(0, 0, 0, 0.5);
+    --text-bread-color: rgba(0, 0, 0, 0.3);
 }
 :root body.dark {
     --text-color: #E8E8E8;
@@ -29,8 +29,8 @@ body{
     --border-color: rgba(255, 255, 255, 0.2);
     --blur-header-color: rgba(24, 24, 24, 0.5);
     --blur-contact-link: rgba(68, 68, 68, 0.5);
-    --text-bread-color-active: #333;
-    --text-bread-color: rgba(0, 0, 0, 0.5);
+    --text-bread-color-active: #fff;
+    --text-bread-color: rgba(255, 255, 255, 0.3);
 }
 a {
     text-decoration: none;
@@ -222,7 +222,7 @@ footer .link-icon::after {
     margin-right: 0;
 } */
 .card-works:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1) rotateZ(5deg);
 }
 .wrap-card-img {
     overflow: hidden;
@@ -629,27 +629,26 @@ footer .link-icon::after {
     }
 }
 /* Work (Offline Cashback) */
-#projects-section {
-    padding: 100px 0;
-    background-color: var(--background-color-02);
-}
 #projects-main-section {
-    height: 84vh;
-    min-height: 700px;
-    display: flex;
-    align-items: center;
+    padding: 30px 0 100px;
     position: relative;
     background-color: var(--background-color);
 }
-.projects-wrap-text {
+.p-main-wrap-contant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-main-wrap-text {
     max-width: 500px;
 }
-.bread-crumb {
+.p-main-img.mobil {
+    display: none;
+}
+#bread {
     height: 70px;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 0;
 }
 .bread-crumb a {
     color: var(--text-bread-color-active);
@@ -661,35 +660,19 @@ footer .link-icon::after {
 .bread-crumb-select {
     color: var(--text-bread-color);
 }
+.bread-crumb.mobil {
+    display: none;
+}
+.wrap-images-projects {
+    font-size: 0;
+}
+.wrap-images-projects img {
+    width: 100%;
+}
 .works-wrap-link a {
     font-size: 20px;
+    font-weight: 500;
     color: var(--blue);
-}
-.projects-wrap {
-    display: grid;
-    align-items: top;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 60px;
-    grid-template-rows: auto;
-    margin-bottom: 80px;
-}
-.projects-wrap-text{
-    margin-bottom: 30px;
-}
-.projects-wrap-text h4{
-    margin-bottom: 12px;
-}
-.projects-wrap.grid-offline-01 {
-    grid-template-columns: 4.1fr 1fr 1fr;
-}
-.projects-wrap.grid-offline-01 div:last-child {
-    padding-top: 228px;
-}
-.projects-wrap.grid-offline-02 {
-    grid-template-columns: 3.8fr 2.05fr 1fr;
-}
-.projects-img {
-    width: 100%;
 }
 .works-wrap-link a::after {
     content:url(../img/arrow-03.svg);
@@ -698,6 +681,97 @@ footer .link-icon::after {
 .works-wrap-link {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding: 80px 0;
 }
-
+.works-wrap-link a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 1440px) {
+    .p-main-wrap-text {
+        margin-right: 40px;
+    }
+    .p-main-wrap-contant img{
+        width: 700px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #projects-main-section {
+        padding: 20px 0 90px;
+    }
+    .p-main-wrap-contant img{
+        width: 560px;
+    }
+    .p-main-wrap-text {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .p-main-wrap-contant img{
+        width: 440px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #projects-main-section {
+        padding: 10px 0 40px;
+    }
+    .p-main-wrap-contant {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .p-main-wrap-text {
+        order: 2;
+        margin-right: 0;
+        max-width: 480px;
+    }
+    .p-main-img.desktop {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .p-main-wrap-contant {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .p-main-wrap-text {
+        order: 2;
+    }
+    .p-main-wrap-contant img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .p-main-img.mobil {
+        display: inline-block;
+        margin-bottom: 40px
+    }
+    .p-main-img.desktop {
+        display: none;
+    }
+    .bread-crumb {
+        display: none;
+    }
+    .bread-crumb.mobil {
+        display: block;
+        position: relative;
+    }
+    #bread {
+        height: 60px;
+    }
+    .bread-crumb.mobil span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .bread-crumb.mobil a {
+        position: absolute;
+        top: 4px;
+    }
+    .works-wrap-link {
+        padding: 60px 0;
+    }
+    .works-wrap-link a {
+        font-size: 18px;
+    }
+}
