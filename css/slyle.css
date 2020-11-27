@@ -686,6 +686,13 @@ footer .link-icon::after {
 .works-wrap-link a:hover {
     text-decoration: underline;
 }
+.projects-video-wrap {
+    background-color: #01379A;
+    padding: 4.4vw;
+}
+.projects-video-wrap video {
+    width: 100%;
+}
 @media screen and (max-width: 1440px) {
     .p-main-wrap-text {
         margin-right: 40px;
