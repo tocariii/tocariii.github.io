@@ -550,7 +550,7 @@ footer .link-icon::after {
         max-width: 100%;
     }
     footer {
-        padding: 40px 0 40px;
+        padding: 40px 0 100px;
     }
     .contact-links {
         right: auto;
@@ -587,6 +587,11 @@ footer .link-icon::after {
     }
     .photo-01 {
         display: none;
+    }
+	.contact-links {
+        right: auto;
+        left: 20px;
+        bottom: 20px;
     }
 }   
 @media screen and (max-width: 640px) {
@@ -636,11 +641,6 @@ footer .link-icon::after {
     }
     #about {
         padding: 60px 0;
-    }
-    .contact-links {
-        right: auto;
-        left: 20px;
-        bottom: 20px;
     }
 }
 /* Work (Offline Cashback) */
