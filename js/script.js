@@ -15,12 +15,12 @@ $(function(){
     $('.com-banner').on('click', function(){
         lignhtbox = window.lignhtbox || $('.lightbox');
         if (lignhtbox.length && window.innerWidth < 451) {
-            lignhtbox.addClass('active').find('img').attr('src', $(this).attr('src'));
+            lignhtbox.addClass('active').removeClass('hide').find('img').attr('src', $(this).attr('src'));
         }
     });
     $('.lightbox-closer').on('click', function(){
         lignhtbox = window.lignhtbox || $('.lightbox');
-        if (lignhtbox.length) lignhtbox.removeClass('active');
+        if (lignhtbox.length) lignhtbox.removeClass('active').addClass('hide');
     });
 });
 function workSliderInit() {
