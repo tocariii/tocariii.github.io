@@ -5,6 +5,11 @@ $(function(){
     });
     $('button.theme').on('click', function(){
         $('body').toggleClass('dark');
+        if ($('body').hasClass('dark')) {
+            localStorage.setItem('site-theme', 'dark')
+        } else {
+            localStorage.removeItem('site-theme')
+        }
     });
     $('.nav-link[href^="#"]').on("click", function () {
         var id  = $(this).attr('href'),
