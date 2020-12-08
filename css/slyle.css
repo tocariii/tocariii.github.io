@@ -589,15 +589,6 @@ footer .link-icon::after {
     .photo-01 {
         display: none;
     }
-<<<<<<< HEAD
-    .contact-links {
-=======
-	.contact-links {
->>>>>>> fc293a888ffb4833bdae278e84ac2c0a59fdf0b7
-        right: auto;
-        left: 20px;
-        bottom: 20px;
-    }
 }   
 @media screen and (max-width: 640px) {
     .about-gird ul {
