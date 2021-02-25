@@ -4,236 +4,376 @@
 	<meta charset="UTF-8">
 	<title>Portfolio Natalia Tocariii</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/slick.css" type="text/css"/>
-	<link rel="stylesheet" href="./css/slyle.css" type="text/css"/>
+	<link rel="stylesheet" href="./css/remodal.css" type="text/css"/>
+	<link rel="stylesheet" href="./css/style.css" type="text/css"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
 </head>
 <body>
-	<script>
-		if (window.localStorage.getItem('site-theme') == 'dark') {
-			var bodyClasses = document.body.getAttribute('class');
-			if (typeof bodyClasses !== 'string' || typeof bodyClasses === 'string' && bodyClasses.split(' ').indexOf('dark') == -1) {
-				document.body.setAttribute('class', bodyClasses + ' dark');
-			}
-		}
-	</script>	
+	<div class="gradient gradient_big-top"></div>
+	<div class="gradient gradient_big-right"></div>
+	<div class="gradient gradient_big-bottom"></div>
+	<div class="gradient gradient_small-right"></div>
+	<div class="gradient gradient_small-right-bottom"></div>
+	<div class="gradient gradient_small-left"></div>
+	<div class="gradient gradient_small-left-bottom"></div>
+	<div class="gradient gradient_small-center"></div>
+	<div class="gradient gradient_small-center-bottom"></div>
 	<header>
 		<div class="container">
-			<ul class="nav-list">
-				<li class="nav-list-item">
-					<a href="/" class="brand-logo nav-link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="88" height="20" viewBox="0 0 88 20" fill="none">
-							<rect width="88" height="20" fill="#2A73FF"/>
-							<path d="M18.554 16.234C17.726 16.234 17.078 16.018 16.61 15.586C16.142 15.142 15.908 14.506 15.908 13.678V8.53H14.45V6.964H15.908V4.444H17.852V6.964H20.048V8.53H17.852V13.3C17.852 13.72 17.924 14.038 18.068 14.254C18.224 14.458 18.506 14.56 18.914 14.56C19.346 14.56 19.724 14.464 20.048 14.272V15.946C19.832 16.042 19.586 16.114 19.31 16.162C19.046 16.21 18.794 16.234 18.554 16.234ZM26.1102 16.27C24.6462 16.27 23.5542 15.856 22.8342 15.028C22.1262 14.2 21.7722 13.018 21.7722 11.482C21.7722 9.862 22.1382 8.668 22.8702 7.9C23.6142 7.132 24.6882 6.748 26.0922 6.748C27.5682 6.748 28.6662 7.162 29.3862 7.99C30.1062 8.806 30.4662 9.97 30.4662 11.482C30.4662 13.006 30.0882 14.188 29.3322 15.028C28.5762 15.856 27.5022 16.27 26.1102 16.27ZM26.0922 14.668C27.0042 14.668 27.6462 14.374 28.0182 13.786C28.3902 13.198 28.5762 12.43 28.5762 11.482C28.5762 10.45 28.3842 9.67 28.0002 9.142C27.6162 8.602 26.9802 8.332 26.0922 8.332C25.1802 8.332 24.5442 8.614 24.1842 9.178C23.8242 9.73 23.6442 10.498 23.6442 11.482C23.6442 12.478 23.8302 13.258 24.2022 13.822C24.5742 14.386 25.2042 14.668 26.0922 14.668ZM36.6245 16.18C36.0725 16.18 35.5325 16.102 35.0045 15.946C34.4765 15.79 33.9965 15.538 33.5645 15.19C33.1445 14.83 32.8085 14.356 32.5565 13.768C32.3045 13.168 32.1785 12.424 32.1785 11.536C32.1785 10.624 32.2985 9.862 32.5385 9.25C32.7785 8.638 33.1085 8.152 33.5285 7.792C33.9485 7.42 34.4225 7.156 34.9505 7C35.4905 6.844 36.0425 6.766 36.6065 6.766C37.5905 6.766 38.5145 6.946 39.3785 7.306V8.998C38.9705 8.818 38.5625 8.68 38.1545 8.584C37.7465 8.476 37.3205 8.422 36.8765 8.422C35.9405 8.422 35.2325 8.656 34.7525 9.124C34.2845 9.592 34.0505 10.348 34.0505 11.392C34.0505 12.472 34.2725 13.264 34.7165 13.768C35.1725 14.26 35.9105 14.506 36.9305 14.506C37.3745 14.506 37.8065 14.452 38.2265 14.344C38.6465 14.224 39.0365 14.08 39.3965 13.912V15.604C38.9645 15.796 38.5205 15.94 38.0645 16.036C37.6205 16.132 37.1405 16.18 36.6245 16.18ZM44.8521 16.27C44.2401 16.27 43.6521 16.186 43.0881 16.018C42.5241 15.85 42.0621 15.556 41.7021 15.136C41.3421 14.716 41.1621 14.128 41.1621 13.372C41.1621 12.376 41.4501 11.638 42.0261 11.158C42.6141 10.666 43.4181 10.42 44.4381 10.42C45.0261 10.42 45.5421 10.48 45.9861 10.6C46.4421 10.72 46.8261 10.87 47.1381 11.05V10.204C47.1381 9.568 46.9401 9.106 46.5441 8.818C46.1601 8.518 45.6201 8.368 44.9241 8.368C44.4081 8.368 43.8801 8.452 43.3401 8.62C42.8121 8.776 42.3741 8.998 42.0261 9.286V7.522C42.3621 7.306 42.8481 7.126 43.4841 6.982C44.1201 6.838 44.7861 6.766 45.4821 6.766C46.0461 6.766 46.5981 6.856 47.1381 7.036C47.6901 7.216 48.1401 7.528 48.4881 7.972C48.8481 8.416 49.0281 9.016 49.0281 9.772L49.0101 14.092C49.0101 14.68 48.8241 15.13 48.4521 15.442C48.0921 15.754 47.6001 15.97 46.9761 16.09C46.3521 16.21 45.6441 16.27 44.8521 16.27ZM43.0341 13.282C43.0341 13.642 43.1361 13.936 43.3401 14.164C43.5441 14.38 43.7961 14.542 44.0961 14.65C44.4081 14.746 44.7321 14.794 45.0681 14.794C45.7641 14.794 46.2801 14.746 46.6161 14.65C46.9641 14.542 47.1381 14.32 47.1381 13.984V12.238C46.8621 12.118 46.5501 12.022 46.2021 11.95C45.8661 11.878 45.5061 11.842 45.1221 11.842C43.7301 11.842 43.0341 12.322 43.0341 13.282ZM51.6836 16V7.792C51.8396 7.696 52.1276 7.57 52.5476 7.414C52.9676 7.246 53.4596 7.096 54.0236 6.964C54.5996 6.832 55.1876 6.766 55.7876 6.766C56.0876 6.766 56.3336 6.79 56.5256 6.838C56.7176 6.886 56.8796 6.94 57.0116 7V8.512C56.4716 8.428 55.8836 8.404 55.2476 8.44C54.6116 8.476 54.0536 8.536 53.5736 8.62V16H51.6836ZM58.873 5.524V3.814H60.889V5.524H58.873ZM58.927 16V7.018H60.817L60.835 16H58.927ZM63.5488 5.524V3.814H65.5648V5.524H63.5488ZM63.6028 16V7.018H65.4928L65.5108 16H63.6028ZM68.2246 5.524V3.814H70.2406V5.524H68.2246ZM68.2786 16V7.018H70.1686L70.1866 16H68.2786ZM72.8464 16V13.894H74.9884V16H72.8464Z" fill="white"/>
+			<ul class="navbar">
+				<li class="navbar_item logo-wrapper">
+					<a href="/" class="brand-logo">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 26" fill="none">
+							<path d="M7.74084 9.35999V19.3143C7.74084 20.0076 7.90289 20.5152 8.22698 20.8371C8.576 21.1343 9.1494 21.2829 9.94717 21.2829H12.3779V25.6657H9.08708C4.67442 25.6657 2.46809 23.5362 2.46809 19.2771V9.35999H0V5.08857H2.46809V0H7.74084V5.08857H12.3779V9.35999H7.74084Z" fill="white"/>
+							<path d="M25.3427 26C23.3482 26 21.5533 25.5667 19.9577 24.7C18.3622 23.8086 17.1032 22.5581 16.1808 20.9486C15.2833 19.339 14.8346 17.4819 14.8346 15.3771C14.8346 13.2724 15.2958 11.4152 16.2182 9.80571C17.1655 8.19619 18.4495 6.9581 20.0699 6.09143C21.6904 5.2 23.4978 4.75429 25.4922 4.75429C27.4867 4.75429 29.2941 5.2 30.9146 6.09143C32.535 6.9581 33.8065 8.19619 34.7289 9.80571C35.6763 11.4152 36.1499 13.2724 36.1499 15.3771C36.1499 17.4819 35.6638 19.339 34.6915 20.9486C33.7442 22.5581 32.4478 23.8086 30.8024 24.7C29.1819 25.5667 27.362 26 25.3427 26ZM25.3427 21.4686C26.29 21.4686 27.175 21.2457 27.9977 20.8C28.8454 20.3295 29.5185 19.6362 30.0171 18.72C30.5157 17.8038 30.765 16.6895 30.765 15.3771C30.765 13.4209 30.2415 11.9229 29.1944 10.8829C28.1722 9.81809 26.9133 9.28571 25.4175 9.28571C23.9216 9.28571 22.6627 9.81809 21.6405 10.8829C20.6433 11.9229 20.1447 13.4209 20.1447 15.3771C20.1447 17.3333 20.6308 18.8438 21.6031 19.9086C22.6003 20.9486 23.8469 21.4686 25.3427 21.4686Z" fill="white"/>
+							<path d="M38.644 15.3771C38.644 13.2476 39.0803 11.3905 39.9529 9.80571C40.8254 8.19619 42.0345 6.9581 43.5802 6.09143C45.1259 5.2 46.8959 4.75429 48.8904 4.75429C51.4582 4.75429 53.5772 5.3981 55.2476 6.68572C56.9428 7.94857 58.0772 9.73143 58.6505 12.0343H53.0038C52.7047 11.1429 52.1936 10.4495 51.4706 9.95428C50.7726 9.43428 49.9 9.17428 48.853 9.17428C47.3571 9.17428 46.173 9.71904 45.3004 10.8086C44.4278 11.8733 43.9916 13.3962 43.9916 15.3771C43.9916 17.3333 44.4278 18.8562 45.3004 19.9457C46.173 21.0105 47.3571 21.5429 48.853 21.5429C50.972 21.5429 52.3557 20.6019 53.0038 18.72H58.6505C58.0772 20.9486 56.9428 22.7191 55.2476 24.0314C53.5523 25.3438 51.4332 26 48.8904 26C46.8959 26 45.1259 25.5667 43.5802 24.7C42.0345 23.8086 40.8254 22.5705 39.9529 20.9857C39.0803 19.3762 38.644 17.5067 38.644 15.3771Z" fill="white"/>
+							<path d="M61.1397 15.3029C61.1397 13.2229 61.551 11.3781 62.3737 9.76857C63.2214 8.15904 64.3557 6.92095 65.7767 6.05429C67.2227 5.18762 68.8307 4.75429 70.6007 4.75429C72.1464 4.75429 73.4926 5.06381 74.6394 5.68286C75.8111 6.30191 76.746 7.08191 77.4441 8.02286V5.08857H82.7168V25.6657H77.4441V22.6571C76.7709 23.6229 75.8361 24.4276 74.6394 25.0714C73.4677 25.6905 72.109 26 70.5633 26C68.8182 26 67.2227 25.5543 65.7767 24.6629C64.3557 23.7714 63.2214 22.521 62.3737 20.9114C61.551 19.2771 61.1397 17.4076 61.1397 15.3029ZM77.4441 15.3771C77.4441 14.1143 77.1948 13.0371 76.6962 12.1457C76.1975 11.2295 75.5244 10.5362 74.6768 10.0657C73.8292 9.57047 72.9192 9.32285 71.9469 9.32285C70.9747 9.32285 70.0772 9.55809 69.2545 10.0286C68.4318 10.499 67.7587 11.1924 67.2351 12.1086C66.7365 13 66.4872 14.0648 66.4872 15.3029C66.4872 16.541 66.7365 17.6305 67.2351 18.5714C67.7587 19.4876 68.4318 20.1933 69.2545 20.6886C70.1021 21.1838 70.9996 21.4314 71.9469 21.4314C72.9192 21.4314 73.8292 21.1962 74.6768 20.7257C75.5244 20.2305 76.1975 19.5371 76.6962 18.6457C77.1948 17.7295 77.4441 16.64 77.4441 15.3771Z" fill="white"/>
+							<path d="M93.0654 8.28286C93.7385 7.19334 94.6111 6.33905 95.6831 5.72C96.78 5.10095 98.0265 4.79143 99.4226 4.79143V10.2514H98.039C96.3936 10.2514 95.1471 10.6352 94.2994 11.4029C93.4767 12.1705 93.0654 13.5076 93.0654 15.4143V25.6657H87.83V5.08857H93.0654V8.28286Z" fill="white"/>
+							<path d="M108.184 5.08857V25.6657H102.949V5.08857H108.184Z" fill="white"/>
+							<path d="M118.592 5.08857V25.6657H113.357V5.08857H118.592Z" fill="white"/>
+							<path d="M129 5.08857V25.6657H123.765V5.08857H129Z" fill="white"/>
 						</svg>
 					</a>
 				</li>
-				<li class="nav-list-item">
-					<a href="#works" class="nav-link txt t-sm">WORKS</a>
-				</li>
-				<li class="nav-list-item">
-					<a href="#about" class="nav-link txt t-sm">ABOUT</a>
-				</li>
-				<li class="flex-sticky"></li>
-				<!-- <li class="nav-list-item">
-					<button class="nav-icon lang"></button>
-				</li> -->
-				<li class="nav-list-item">
-					<button class="nav-icon theme"></button>
+				<li class="navbar_wrap-item">
+					<div class="navbar_item">
+						<a href="#about" class="txt-s text_gray">ABOUT</a>
+					</div>
+					<div class="navbar_item">
+						<a href="#works" class="txt-s text_gray">WORKS</a>
+					</div>
+					<div class="navbar_item">
+						<a href="#contacts" class="txt-s text_gray">CONTACTS</a>
+					</div>
 				</li>
 			</ul>
-    	</div>
+		</div>
 	</header>
-	<section id="main-section">
+	<section id="main">
 		<div class="container">
-			<div class="flex-main-section">
-				<div class="main-wrap-text">
-					<h3>Hi, I’m Natalia 👋</h3>
-					<h1>Building digital product and brands.</h1>
-					<div class="txt t-md txt-light">a Visual Artist and Web Designer. I specialize in Responsive Web Design, and Visual Development.</div>
+			<div class="main_wrap-text">
+				<h3 class="text_gray text_md">Hello there</h3>
+				<h1>I’m Natalia</br> a digital web</br>designer</h1>
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<div class="about_skills">
+			<div class="container">
+				<div class="skills_grid">
+					<div class="skills_grid-item">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+							<rect width="60" height="60" rx="10" fill="white" fill-opacity="0.06"/>
+							<path d="M40.4479 32.8079L38.1559 21.348L16 16L21.348 38.1559L32.8079 40.4479L36.6443 44.2843L44.2843 36.6443L40.4479 32.8079Z" fill="#48FA8C" stroke="#3657E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M16 16L27.5914 27.5914" stroke="#3657E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M29.7533 32.8092C31.441 32.8092 32.8092 31.441 32.8092 29.7533C32.8092 28.0655 31.441 26.6973 29.7533 26.6973C28.0655 26.6973 26.6973 28.0655 26.6973 29.7533C26.6973 31.441 28.0655 32.8092 29.7533 32.8092Z" stroke="#3657E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<h4>Graphic Design</h4>
+						<span class="txt text_gray">Branding, Visual Design, Photoshop and Illustrator</span>
+					</div>
+					<div class="skills_grid-item">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+							<rect width="60" height="60" rx="10" fill="white" fill-opacity="0.06"/>
+							<path d="M18 18L26.9401 42L30.7101 34.6174L37.2595 41.1667L39.212 39.2143L41.1645 37.2618L34.6151 30.7124L42 26.9401L18 18Z" fill="#FEC0A7" stroke="#3657E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<h4>Web Design</h4>
+						<span class="txt text_gray">Responsive Websites, Interactivity and animation, Design Systems, WebFlow development, Html & CSS</span>
+					</div>
+					<div class="skills_grid-item">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+							<rect width="60" height="60" rx="10" fill="white" fill-opacity="0.06"/>
+							<circle cx="38" cy="22" r="6" fill="#48FA8C" stroke="#3657E3" stroke-width="2"/>
+							<circle cx="38" cy="38" r="6" stroke="#3657E3" stroke-width="2"/>
+							<circle cx="22" cy="22" r="6" fill="#FEC0A7" stroke="#3657E3" stroke-width="2"/>
+							<circle cx="22" cy="38" r="6" fill="#48FA8C" stroke="#3657E3" stroke-width="2"/>
+						</svg>
+						<h4>UI/UX Design</h4>
+						<span class="txt text_gray">UI/UX prototyping, Design research, Typography and layouts, Figma</span>
+					</div>
+					<!-- <div class="skills_grid-item">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+							<rect width="60" height="60" rx="10" fill="white" fill-opacity="0.06"/>
+							<path d="M18.2663 19H41.733C43.3463 19 44.6663 20.275 44.6663 21.8333V38.8333C44.6663 40.3917 43.3463 41.6667 41.733 41.6667H18.2663C16.653 41.6667 15.333 40.3917 15.333 38.8333V21.8333C15.333 20.275 16.653 19 18.2663 19Z" fill="#FEC0A7" stroke="#3657E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M33 35L38 30.5L33 26" stroke="#3657E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M27 26L22 30.5L27 35" stroke="#3657E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<h4>Development</h4>
+						<span class="txt text_gray">
+							WebFlow development</br>
+							Animations</br>
+							Html & CSS </br>
+							Visual Studio Code</span>
+					</div> -->
 				</div>
-				<div>
-					<img class="photo-01" src="./img/photo-01.png" alt>
-				</div>
+			</div>
+		</div>
+		<div class="about_experience">
+			<div class="container">
+				<h4 class="text_gray">A web designer from Kazan, Russia. I'm looking to join a great team :)</h4>
 			</div>
 		</div>
 	</section>
 	<section id="works">
 		<div class="container">
-			<h2>WORKS</h2>
-			<div class="slider-arrows">
-				<button class="slide-prev">
-					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-						<path d="M9 1L1 7.5L9 14" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M1.5 7.5H14.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</button>	
-				<button class="slide-next">
-					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-						<path d="M6.5 14L14.5 7.5L6.5 0.999999" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M14 7.5L1 7.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</button>
-			</div>
-			<div class="wrap-card-works">
-				<a href="./offline-cashback.html" class="card-works">
-					<div class="wrap-card-img">
-						<img src="./img/img-offline-cashback-02.png" alt>
+			<div class="works_grid">
+				<div class="works_grid_one">
+					<div class="works_card-wrap">
+						<div class="works_card" data-modalaction="cashback">
+							<div class="works__card_wrap-img cashback">
+								<img class="works__card_img" src="./img/bg-img-cashback.png">
+							</div>
+							<div class="works__card_description">
+								<span>Landing page</span>
+								<h4 class="text_smd">Offline Cashback</h4>
+							</div>
+						</div>
 					</div>
-					<span class="txt txt-light t-md t-sm">OFFLINE CASHBACK</span>
-				</a>
-				<a href="./habit-coffee.html" class="card-works">
-					<div class="wrap-card-img">
-						<img src="./img/img-habit-coffee-02.png" alt>
-					</div>
-					<span class="txt txt-light t-md t-sm">HABIT COFFEE</span>
-				</a>
-				<a href="./Qviz for Bibliophiles.html" class="card-works">
-					<div class="wrap-card-img">
-						<img src="./img/img-qviz-02.png" alt>
-					</div>
-					<span class="txt txt-light t-md t-sm">QUIZ FOR "BIBLIOPHILES”</span>
-				</a>
-				<a href="./communication banners.html" class="card-works">
-					<div class="wrap-card-img">
-						<img src="./img/img-com-banners.png" alt>
-					</div>
-					<span class="txt txt-light t-md t-sm">COMMUNICATION BANNERS</span>
-				</a>
-				<a href="./illustrations.html" class="card-works">
-					<div class="wrap-card-img">
-						<img src="./img/img-illustations.png" alt>
-					</div>
-					<span class="txt txt-light t-md t-sm">ILLUSTRATIONS & STICKERS</span>
-				</a>
-				<a href="https://www.behance.net/tocarii" class="card-works behance">
-					<div>
-						<h3>More works on</br> behance</h3>
-						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-							<path d="M1.99998 17.3594L32.7195 17.3602" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M21.9154 6.55649L32.7193 17.3604L21.9154 28.1644" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</div>
-					
-				</a>
-			</div>
-		</div>
-	</section>
-	<section id="about">
-		<div class="container">
-			<h2>ABOUT ME</h2>
-			<div class="grid-about-section">
-				<div class="about-gird">
-					<div class="about-colonum box-01">
-						<h4>Work Experience</h4>
-						<ul class="work-list">
-							<li>
-								<a href="https://www.fix.ru" class="txt t-md"><b>Fix</b></br>
-									(The group of IT companies)</a>
-								<span class="txt txt-light t-sm t-b">2019 - 2020</span>
-								<span class="txt txt-light t-sm">Graphic Communication Designer, Webflow Development</span>
-							</li>
-							<li>
-								<a href="http://feedfoodfamily.ru" class="txt t-md"><b>Feed Food Family</b></br>
-									(Restaurant holding company)</a>
-								<span class="txt txt-light t-sm t-b">2018 - 2019</span>
-								<span class="txt txt-light t-sm">Brand Designer and Graphic Communication Designer</span>
-							</li>
-						</ul>
-					</div>
-					<div class="about-colonum box-02">
-						<h4>Education</h4>
-						<ul>
-							<li>
-								<span class="txt t-b">Naberezhnye Chelny Сollege of arts</span>
-								<span class="txt txt-light t-sm t-b">2013 - 2017</span>
-								<span class="txt txt-light t-sm">Graphic Designer, Thether</span>
-							</li>
-						</ul>
-					</div>
-					<div class="about-colonum box-03">
-						<h4>Courses</h4>
-						<ul>
-							<li>
-								<a href="https://korzilla.ru" class="txt t-md"><b>Korzilla </b></br>
-									(Web Design Studio)</a>
-								<span class="txt txt-light t-sm t-b">2017</span>
-								<span class="txt txt-light t-sm">Web Design</span>
-							</li>
-							<li>
-								<a href="https://webflow.pro" class="txt t-b">Webflow</a>
-								<span class="txt txt-light t-sm t-b">2019</span>
-								<span class="txt txt-light t-sm">Webflow Development</span>
-							</li>
-						</ul>
-					</div>
-					<div class="about-colonum box-04">
-						<h4>Skills</h4>
-						<ul class="skills-list">
-							<li>
-								<span class="txt txt-light t-sm">UI Design</span>
-								<span class="txt txt-light t-sm">Visual Design</span>
-								<span class="txt txt-light t-sm">Prototyping</span>
-							</li>
-							<li>
-								<span class="txt txt-light t-sm">Webflow Development</span>
-								<span class="txt txt-light t-sm">Html / Css</span>
-							</li>
-						</ul>
-						<h4>Tools</h4>
-						<ul class="skills-list">
-							<li>
-								<span class="txt txt-light t-sm">Photoshop</span>
-								<span class="txt txt-light t-sm">Illustrator</span>
-								<span class="txt txt-light t-sm">Figma</span>
-							</li>
-							<li>
-								<span class="txt txt-light t-sm">Webflow</span>
-								<span class="txt txt-light t-sm">Redimag</span>
-								<span class="txt txt-light t-sm">Visual Studio Code</span>
-							</li>
-						</ul>
-					</div>
+				</div>
+				<div class="works_grid_two">
+					<div class="works_card-wrap">
+						<div class="works_card scale-m" data-modalaction="sellerden">
+							<div class="works__card_wrap-img sellerden">
+								<img class="works__card_img" src="./img/bg-img-sellerden.png">
+							</div>
+							<div class="works__card_description">
+								<span>Landing page</span>
+								<h4 class="text_smd">SellerDen</h4>
+							</div>
+						</div>
+					</div>	
+					<div class="works_card-wrap">
+						<div class="works_card scale-m" data-modalaction="sellercat">
+							<div class="works__card_wrap-img sellercat">
+								<img class="works__card_img" src="./img/bg-img-sellercat.png">
+							</div>
+							<div class="works__card_description">
+								<span>Landing page</span>
+								<h4 class="text_smd">SellerCat</h4>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="works_grid_three">
+					<div class="works_card-wrap">
+						<div class="works_card scale-s" data-modalaction="backit">
+							<div class="works__card_wrap-img backit">
+								<img class="works__card_img" src="./img/img-illustration.png">
+							</div>
+							<div class="works__card_description">
+								<span>Illustration</span>
+								<h4 class="text_smd">Backit</h4>
+							</div>
+						</div>
+					</div>	
+					<div class="works_card-wrap">
+						<div class="works_card scale-l" data-modalaction="habit">
+							<div class="works__card_wrap-img habit">
+								<img class="works__card_img" src="./img/bg-img-habit.png">
+							</div>
+							<div class="works__card_description">
+								<span>Web Site</span>
+								<h4 class="text_smd">Habit</h4>
+							</div>
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer>
-		<h3>TEXT ME IF YOU INTERESTED<br> TO WORK WITH ME</h3>
-		<a href="mailto:tokarnator@gmail.com" class="link-icon">tokarnator@gmail.com</a>
-	</footer>
-	<ul class="contact-links">
-		<li>
-			<a href="mailto:tokarnator@gmail.com">
-				<svg class="svg-email" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-					<path d="M18.6 4H2.95556C1.88 4 1.00978 4.825 1.00978 5.83333L1 16.8333C1 17.8417 1.88 18.6667 2.95556 18.6667H18.6C19.6756 18.6667 20.5556 17.8417 20.5556 16.8333V5.83333C20.5556 4.825 19.6756 4 18.6 4ZM18.2089 7.89583L11.296 11.9475C10.9831 12.1308 10.5724 12.1308 10.2596 11.9475L3.34667 7.89583C3.24862 7.84423 3.16277 7.77452 3.09429 7.69092C3.02582 7.60731 2.97615 7.51155 2.9483 7.40942C2.92044 7.3073 2.91498 7.20094 2.93224 7.09678C2.9495 6.99262 2.98913 6.89283 3.04872 6.80344C3.10831 6.71406 3.18663 6.63693 3.27893 6.57675C3.37124 6.51656 3.47561 6.47455 3.58573 6.45327C3.69585 6.432 3.80943 6.43189 3.9196 6.45295C4.02977 6.47402 4.13423 6.51582 4.22667 6.57583L10.7778 10.4167L17.3289 6.57583C17.4213 6.51582 17.5258 6.47402 17.636 6.45295C17.7461 6.43189 17.8597 6.432 17.9698 6.45327C18.0799 6.47455 18.1843 6.51656 18.2766 6.57675C18.3689 6.63693 18.4472 6.71406 18.5068 6.80344C18.5664 6.89283 18.6061 6.99262 18.6233 7.09678C18.6406 7.20094 18.6351 7.3073 18.6073 7.40942C18.5794 7.51155 18.5297 7.60731 18.4613 7.69092C18.3928 7.77452 18.3069 7.84423 18.2089 7.89583V7.89583Z"/>
-				</svg>
-			</a>
-		</li>
-		<li>
-			<a href="https://www.behance.net/tocarii">
-				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-					<g clip-path="url(#clip0)">
-					<path d="M6.35933 4.12854C7.00421 4.12854 7.58721 4.18217 8.12139 4.30042C8.64802 4.41867 9.10246 4.60154 9.48196 4.85935C9.85802 5.11716 10.1516 5.45404 10.3626 5.88716C10.5668 6.31685 10.6741 6.85035 10.6741 7.47323C10.6741 8.14973 10.5166 8.71966 10.2086 9.17754C9.89721 9.6361 9.44208 10.0012 8.83021 10.2947C9.66071 10.5347 10.2767 10.9534 10.6851 11.5515C11.0969 12.1565 11.2935 12.8797 11.2935 13.7144C11.2935 14.4019 11.1753 14.989 10.9175 15.4833C10.6699 15.9772 10.3047 16.4027 9.85389 16.7222C9.41321 17.0412 8.89071 17.2701 8.32489 17.4241C7.75395 17.5782 7.16521 17.6566 6.57383 17.6572H-0.000732422V4.1361H6.35864L6.35933 4.12854ZM15.5299 15.2757C15.9307 15.6696 16.511 15.8662 17.2665 15.8662C17.8069 15.8662 18.273 15.7301 18.6663 15.4544C19.0568 15.1897 19.2891 14.8955 19.3826 14.595H21.7531C21.3846 15.7659 20.7934 16.6108 20.0131 17.1161C19.2328 17.6283 18.2875 17.8751 17.1916 17.8751C16.4216 17.8751 15.7375 17.7569 15.1078 17.51C14.5148 17.2763 13.9778 16.9199 13.532 16.4644C13.1058 16.0168 12.7765 15.4757 12.5434 14.8425C12.3103 14.2094 12.1996 13.5143 12.1996 12.7622C12.1996 12.0245 12.3248 11.3514 12.5723 10.7175C12.8025 10.1089 13.1506 9.55167 13.5966 9.07785C14.0511 8.60898 14.5708 8.25766 15.1903 7.98198C15.8063 7.70629 16.4725 7.5846 17.2239 7.5846C18.0585 7.5846 18.7742 7.73516 19.4046 8.06448C20.0037 8.36941 20.5245 8.80813 20.9268 9.34666C21.3317 9.8836 21.6143 10.503 21.7896 11.2015C21.9649 11.889 22.0185 12.6123 21.9828 13.3823H14.9325C14.9325 14.1523 15.1903 14.879 15.5842 15.2729L15.5093 15.3018L15.5299 15.2757ZM6.14071 15.3217C6.43083 15.3217 6.70996 15.2929 6.97121 15.2358C7.21887 15.1872 7.45559 15.0937 7.66971 14.9601C7.86289 14.8384 8.02789 14.659 8.14958 14.4266C8.26783 14.208 8.32146 13.9041 8.32146 13.5459C8.32146 12.8584 8.12071 12.3641 7.73433 12.0637C7.34039 11.7701 6.82821 11.623 6.18746 11.623H2.96858V15.3362H6.14139V15.3073L6.14071 15.3217ZM18.6161 10.1442C18.2902 9.78941 17.7533 9.59966 17.094 9.59966C16.6677 9.59966 16.3136 9.66773 16.027 9.81829C15.7636 9.9469 15.5313 10.1313 15.3463 10.3587C15.1815 10.5612 15.0597 10.7951 14.9881 11.0462C14.9242 11.2584 14.8834 11.4769 14.8665 11.6979H19.2314C19.1668 11.0104 18.9268 10.5058 18.6085 10.1476V10.1586L18.6161 10.1442ZM5.97639 9.57835C6.50302 9.57835 6.93958 9.45666 7.28333 9.20229C7.62708 8.95548 7.79208 8.53954 7.79208 7.97441C7.79208 7.65954 7.72746 7.40173 7.62708 7.20098C7.51563 7.00895 7.35802 6.84779 7.16852 6.7321C6.96384 6.61359 6.73924 6.53344 6.50577 6.4956C6.25197 6.44759 5.99405 6.42479 5.73577 6.42754H2.96102V9.57835H5.97639ZM14.3158 5.03466H19.7869V6.36635H14.3158V5.02366V5.03466Z" />
-					</g>
-					<defs>
-					<clipPath id="clip0">
-					<rect width="22" height="22" fill="white"/>
-					</clipPath>
-					</defs>
-				</svg>
-			</a>
-		</li>
-		<li>
-			<a href="https://t.me/tocariii">
-				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-					<path d="M20.5693 4.2372L17.6646 17.9356C17.4453 18.9023 16.874 19.1429 16.0621 18.6878L11.6359 15.4263L9.50057 17.4805C9.26407 17.717 9.06676 17.9143 8.61095 17.9143L8.92926 13.4071L17.1318 5.99514C17.4886 5.67751 17.0541 5.50082 16.5777 5.81913L6.43707 12.2046L2.07145 10.8379C1.12201 10.5416 1.10482 9.88845 2.26945 9.43264L19.3449 2.85395C20.1355 2.55763 20.8271 3.02995 20.5693 4.23788V4.2372Z"/>
-				</svg>
-			</a>
-		</li>
-	</ul>
+	<section id="contacts">
+		<div class="container">
+			<div class="contacts_content-wrap">
+				<h2>Let’s work together</h2>
+				<div class="contacts_email-wrap">
+					<a href="mailto:" class="contacts_email txt text_gray">tocariii.design@gmail.com</a>
+					<div class="contacts_copy-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z" stroke="#8E9097" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5" stroke="#8E9097" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+				</div>
+				<div class="contacts_soc-wrap">
+					<a href="/"><h5 class="text_md">Behance</h5></a>
+					<a href="/"><h5 class="text_md telegram">Telegram</h5></a>
+					<a href="/"><h5 class="text_md">Dripple</h5></a>
+				</div>
+				<div class="contacts_soc-wrap_mobil">
+					<a href="/" class="contacts_soc">
+						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+							<rect width="54" height="54" rx="10" fill="white" fill-opacity="0.06"/>
+							<path d="M37.0835 17.5997C36.8682 17.4138 36.6061 17.2903 36.3257 17.2427C36.0453 17.1951 35.7572 17.2251 35.4926 17.3294L17.4695 24.41C17.1554 24.5334 16.8897 24.7553 16.7122 25.0423C16.5346 25.3293 16.4548 25.6661 16.4846 26.0023C16.5144 26.3384 16.6523 26.6559 16.8776 26.9072C17.1028 27.1585 17.4034 27.3301 17.7343 27.3963L22.3124 28.3122V34.0302C22.3121 34.3394 22.4036 34.6416 22.5752 34.8988C22.7468 35.1559 22.9909 35.3563 23.2765 35.4746C23.5621 35.5929 23.8764 35.6238 24.1796 35.5634C24.4828 35.5029 24.7612 35.3539 24.9796 35.1351L27.5132 32.6016L31.3586 35.9854C31.6416 36.2368 32.007 36.3759 32.3856 36.3764C32.5502 36.3762 32.7137 36.3503 32.8703 36.2996C33.1285 36.2177 33.3608 36.0695 33.5439 35.8698C33.727 35.6701 33.8545 35.4258 33.9137 35.1615L37.587 19.133C37.651 18.8558 37.6379 18.5664 37.5491 18.2961C37.4603 18.0258 37.2993 17.785 37.0835 17.5998V17.5997ZM22.9126 26.8386L18.041 25.8643L31.6817 20.5053L22.9126 26.8386ZM23.8749 34.0294V29.3998L26.3378 31.567L23.8749 34.0294ZM32.3907 34.8123L24.3446 27.7317L35.931 19.3638L32.3907 34.8123Z" fill="#F9F9F9"/>
+						</svg>
+					</a>
+					<a href="/" class="contacts_soc">
+						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+							<rect width="54" height="54" rx="10" fill="white" fill-opacity="0.06"/>
+							<path d="M23.7301 26.563C24.4464 26.9063 25.0135 27.3987 25.4313 28.0404C25.8641 28.6821 26.0804 29.4208 26.0804 30.2564C26.0804 31.51 25.6402 32.562 24.7598 33.4126C23.8793 34.2632 22.8049 34.6885 21.5364 34.6885H14.7764V19.0195H21.044C22.2676 19.0195 23.3048 19.4299 24.1554 20.2507C25.006 21.0714 25.4313 22.0862 25.4313 23.2949C25.4313 24.6828 24.8642 25.7721 23.7301 26.563ZM21.044 20.967H16.8581V25.7572H21.044C21.7006 25.7572 22.2527 25.5259 22.7004 25.0633C23.1481 24.6007 23.3719 24.0336 23.3719 23.3621C23.3719 22.7055 23.1406 22.1459 22.678 21.6833C22.2303 21.2057 21.6857 20.967 21.044 20.967ZM21.5364 32.7411C22.2378 32.7411 22.8273 32.4949 23.3048 32.0024C23.7823 31.51 24.0211 30.9056 24.0211 30.1893C24.0211 29.4879 23.7749 28.891 23.2824 28.3986C22.8049 27.9061 22.2229 27.6599 21.5364 27.6599H16.8581V32.7411H21.5364Z" fill="#F9F9F9"/>
+							<path d="M29.7775 29.9878C29.9715 30.9877 30.4267 31.7637 31.143 32.3158C31.8742 32.8679 32.7696 33.144 33.8291 33.144C35.3064 33.144 36.3809 32.5993 37.0524 31.51L38.7089 32.4501C37.6195 34.1364 35.978 34.9795 33.7843 34.9795C32.0085 34.9795 30.561 34.4274 29.4418 33.3231C28.3375 32.2039 27.7853 30.7937 27.7853 29.0925C27.7853 27.4062 28.33 26.0034 29.4194 24.8842C30.5087 23.765 31.9189 23.2054 33.65 23.2054C35.2915 23.2054 36.6271 23.7874 37.6568 24.9514C38.7014 26.1004 39.2237 27.4883 39.2237 29.1148C39.2237 29.3984 39.2013 29.6894 39.1565 29.9878H29.7775ZM33.65 25.0409C32.6054 25.0409 31.7399 25.3394 31.0534 25.9363C30.367 26.5183 29.9417 27.3017 29.7775 28.2866H37.2539C37.0897 27.2271 36.6719 26.4213 36.0004 25.8691C35.3288 25.317 34.5454 25.0409 33.65 25.0409Z" fill="#F9F9F9"/>
+							<path d="M29.7393 21.0986H36.9342" stroke="#F9F9F9" stroke-width="2"/>
+						</svg>
+					</a>
+					<a href="/" class="contacts_soc">
+						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+							<rect width="54" height="54" rx="10" fill="white" fill-opacity="0.06"/>
+							<path d="M36.382 21.562C35.4367 19.9237 34.0761 18.5636 32.4376 17.6187C30.7768 16.6512 28.9644 16.167 27.0003 16.167C25.0362 16.167 23.2238 16.6512 21.562 17.6187C19.9012 18.5861 18.5861 19.9012 17.6187 21.562C16.6512 23.2227 16.167 25.0362 16.167 27.0003C16.167 28.9644 16.6502 30.7779 17.6187 32.4387C18.5637 34.0772 19.9243 35.4374 21.5631 36.382C23.2238 37.3494 25.0362 37.8337 27.0003 37.8337C28.9644 37.8337 30.7768 37.3494 32.4387 36.382C34.0772 35.4371 35.4377 34.077 36.3831 32.4387C37.3505 30.7779 37.8337 28.9644 37.8337 27.0003C37.8337 25.0362 37.3505 23.2227 36.382 21.562ZM27.0003 17.9653C29.167 17.9653 31.0867 18.6587 32.7637 20.0442C31.767 21.3161 30.2872 22.3626 28.322 23.1859C27.2365 21.2218 26.06 19.5817 24.7892 18.2676C25.5094 18.0684 26.2531 17.9668 27.0003 17.9653V17.9653ZM19.9695 21.367C20.7617 20.361 21.764 19.5402 22.9064 18.962C24.2194 20.2631 25.4252 21.887 26.5247 23.837C24.3581 24.487 22.0679 24.812 19.6553 24.812C19.0346 24.812 18.5655 24.7979 18.247 24.7687C18.579 23.5276 19.1656 22.3691 19.9695 21.367V21.367ZM17.9653 27.0003C17.9653 26.9418 17.9686 26.8703 17.9762 26.7837C17.9837 26.697 17.987 26.6255 17.987 26.567C18.2622 26.5822 18.6814 26.5887 19.2447 26.5887C22.1329 26.5887 24.8196 26.1911 27.3037 25.397C27.5062 25.8011 27.7164 26.2561 27.932 26.762C26.502 27.0794 25.0352 27.8518 23.5326 29.0803C22.03 30.3088 20.9337 31.6012 20.2403 32.9587C18.7237 31.2394 17.9653 29.2537 17.9653 27.0003V27.0003ZM27.0003 36.0353C24.9485 36.0353 23.1068 35.3994 21.4742 34.1297C22.1253 32.8438 23.1252 31.6142 24.4762 30.4453C25.826 29.2753 27.1661 28.5462 28.4953 28.257C29.3338 30.5742 29.9009 32.9808 30.1853 35.4287C29.1701 35.8254 28.0903 36.031 27.0003 36.0353V36.0353ZM34.6703 31.7453C33.9612 32.8877 33.0064 33.8577 31.8753 34.5847C31.6153 32.3314 31.117 30.1355 30.3814 27.997C31.3911 27.9255 32.2935 27.8887 33.0897 27.8887C33.9553 27.8887 34.9162 27.9255 35.9703 27.997C35.8289 29.3293 35.3842 30.6115 34.6703 31.7453ZM33.327 26.3287C32.0703 26.3287 30.9079 26.3796 29.8387 26.4803C29.6122 25.8875 29.3665 25.3022 29.102 24.7253C31.3402 23.7438 32.9283 22.5522 33.8676 21.1503C35.1676 22.6822 35.8761 24.4296 35.9909 26.3937C35.1112 26.3503 34.2229 26.3287 33.327 26.3287V26.3287Z" fill="#F9F9F9"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div data-remodal-id="modal" class="modal_container">
+		<div id="modal-cashback" class="modal_block">
+			<div class="modal_block-header">
+				<h4>Cashback service</h4>
+				<button data-remodal-action="close" class="remodal-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<path d="M22.5 7.5L7.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M7.5 7.5L22.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button> 
+			</div>
+			<div class="modal_content-wrap">
+				<div class="modal_image-wrap">
+					<img class="modal-image" src="./img/img-cashback-01.png" width="100%">
+					<img class="modal-image" src="./img/img-cashback-02.png" width="100%">
+				</div>
+				<!-- <iframe class="modal_iframe" src="https://habitcoffee.ru"></iframe> -->
+			</div>
+			<div class="modal_discription">
+				<h5 class="text_smd text_gray">I bring attention to the smallest details to create an unforgettable user experience. </br>
+					Built & hosted in Webflow.</h5>
+				<button class="modal_btn">View live website</button>
+			</div>
+		</div>
+		<div id="modal-sellerden" class="modal_block">
+			<div class="modal_block-header">
+				<h4>Cashback service</h4>
+				<button data-remodal-action="close" class="remodal-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<path d="M22.5 7.5L7.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M7.5 7.5L22.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button> 
+			</div>
+			<div class="modal_content-wrap iframe">
+				<!-- <div class="modal_image-wrap">
+					<img class="modal-image" src="./img/img-cashback-01.png" width="100%">
+				</div> -->
+				<iframe class="modal_iframe" src="https://sellerden.ru/sellerden/"></iframe>
+			</div>
+			<div class="modal_discription">
+				<h5 class="text_smd text_gray">I bring attention to the smallest details to create an unforgettable user experience. </br>
+					Built & hosted in Webflow.</h5>
+				<button class="modal_btn">View live website</button>
+			</div>
+		</div>
+		<div id="modal-sellercat" class="modal_block">
+			<div class="modal_block-header">
+				<h4>Cashback service</h4>
+				<button data-remodal-action="close" class="remodal-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<path d="M22.5 7.5L7.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M7.5 7.5L22.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button> 
+			</div>
+			<div class="modal_content-wrap iframe">
+				<!-- <div class="modal_image-wrap">
+					<img class="modal-image" src="./img/img-cashback-01.png" width="100%">
+				</div> -->
+				<iframe class="modal_iframe" src="https://sellerden.ru/sellercat/"></iframe>
+			</div>
+			<div class="modal_discription">
+				<h5 class="text_smd text_gray">
+					Built & hosted in Webflow.</h5>
+				<button class="modal_btn">View live website</button>
+			</div>
+		</div>
+		<div id="modal-habit" class="modal_block">
+			<div class="modal_block-header">
+				<h4>Habit Coffee</h4>
+				<button data-remodal-action="close" class="remodal-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<path d="M22.5 7.5L7.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M7.5 7.5L22.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button> 
+			</div>
+			<div class="modal_content-wrap iframe">
+				<!-- <div class="modal_image-wrap">
+					<img class="modal-image" src="" width="100%">
+				</div> -->
+				<iframe class="modal_iframe" src="https://habitcoffee.ru"></iframe>
+			</div>
+			<div class="modal_discription">
+				<h5 class="text_smd text_gray">
+					Built & hosted in Webflow.</h5>
+				<button class="modal_btn">View live website</button>
+			</div>
+		</div>
+		<div id="modal-backit" class="modal_block">
+			<div class="modal_block-header">
+				<h4>Cashback service</h4>
+				<button data-remodal-action="close" class="remodal-close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+						<path d="M22.5 7.5L7.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M7.5 7.5L22.5 22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button> 
+			</div>
+			<div class="modal_content-wrap">
+				<div class="modal_image-wrap_four">
+					<img class="modal-image" src="./img/img-illustration-01.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-02.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-03.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-04.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-05.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-06.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-07.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-08.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-06.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-07.png" width="100%">
+					<img class="modal-image" src="./img/img-illustration-08.png" width="100%">
+				</div>
+			</div>
+			<div class="modal_discription">
+				<h5 class="text_smd text_gray">I bring attention to the smallest details to create an unforgettable user experience. </br>
+					Built & hosted in Webflow.</h5>
+				<button class="modal_btn">View live website</button>
+			</div>
+		</div>
+		<div id="" class="modal_grid">
+			<div class="modal_img">
+				<img src="./img/img-illustrations-01.png">
+			</div>
+			<div class="modal_text-wrap">
+				<h1>Remodal</h1> 
+				<h5 class="text_md">A self-taught user-experience designer and front-end developer from Hamburg, Germany. I bring attention to the smallest details to create an unforgettable user experience.</h5>
+			</div>
+			<div class="modal_img-four-grid">
+				<div class="modal_img-four">
+
+				</div>
+				<div class="modal_img-four">
+					
+				</div>
+				<div class="modal_img-four">
+					
+				</div>
+				<div class="modal_img-four">
+					
+				</div>
+				<div class="modal_img-four">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+		
 <script src="./js/jquery.js"></script>
-<script src="./js/slick.js"></script>
+<script src="./js/remodal.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
