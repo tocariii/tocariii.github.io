@@ -41,6 +41,10 @@ $(function(){
         modal.open();
     } );
     pageScrolled();
+    $(document).on('opened', '.remodal', function () {
+        var iframe = $(this).find('.modal_block.active iframe:not(.loaded)');
+        if (iframe.length) iframe.attr('src', iframe.data('src')).addClas('loaded');
+    });
 });
 function onScroll() {
     pageScrolled();
@@ -102,7 +106,7 @@ function hederViewer(reqursive = false) {
         ) navbar.scrollVal = 0; 
         
         navbar.scrollVal += scrolled; 
-        console.log(navbar.scrollVal, navbar.changeVal, navbar.hide )
+
         if (navbar.scrollVal > navbar.changeVal && !navbar.hide 
          || navbar.scrollVal < -navbar.changeVal && navbar.hide
         ) { 
