@@ -257,7 +257,7 @@ header {
 .works__card_description h4 {
     margin-top: 6px;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     .works_card {
         border-radius: 20px;
         overflow: hidden;
@@ -292,13 +292,12 @@ header {
     }
     .works__card_description {
         position: absolute;
-        bottom: 0;
+        bottom: -100px;
         left: 0;
         right: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        transform: translateY(100%);
         transition: 0.5s ease;
         align-items: baseline;
     }
@@ -316,10 +315,10 @@ header {
         object-fit: cover;
     }
     .works_card:hover .works__card_description {
-        transform: translateY(0);
+        bottom: 0;
     }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .works__card_wrap-img {
         border-radius: 20px;
         overflow: hidden;
@@ -356,6 +355,7 @@ header {
     }
     .works__card_description span {
         color: var(--text-color-light);
+        line-height: 16px;
     }
 }
 .works__card_wrap-img.cashback {
@@ -930,6 +930,15 @@ header {
     .works_grid_three {
         grid-column-gap: 40px;
     }
+    .works__card_description {
+        padding: 14px 18px;
+    }
+    .works__card_description span{
+        font-size: 14px;
+    }
+    .works__card_description h4{
+        font-size: 24px;
+    }
 }
 @media screen and (max-width: 800px) {
     h1 {
@@ -961,12 +970,6 @@ header {
     } 
     .about_experience h4 {
         text-align: left;
-    }
-    /* works */
-    .works__card_description {
-        background-color: transparent;
-        -webkit-backdrop-filter:  blur(0); 
-        backdrop-filter:  blur(0);
     }
     /* contacts */
     #contacts {
@@ -1014,7 +1017,10 @@ header {
         background-size: 36%;
     }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
+    #main {
+        height: 85vh;
+    }
     /* about */
     .skills_grid {
         grid-column-gap: 60px;
@@ -1026,11 +1032,11 @@ header {
         max-width: 400px;
     }
     .about_skills {
-        margin-bottom: 60px;
+        margin-bottom: 0;
         background-color: transparent;
     }    
     .about_experience {
-        margin: 0 0 60px 0;
+        margin: 30px 0 80px;
     }
     .about_experience h4 {
         font-size: 26px;
@@ -1050,7 +1056,15 @@ header {
         grid-template-columns: 1fr;
         grid-row-gap: 16px;
     }
+    .works__card_description {
+        background-color: transparent;
+        -webkit-backdrop-filter:  blur(0); 
+        backdrop-filter:  blur(0);
+    }
     /* contacts */
+    #contacts {
+        height: 100vh;
+    }
     .contacts_soc-wrap {
         display: none;
     }
@@ -1066,6 +1080,9 @@ header {
     }
     .contacts_copy-btn {
         display: none;
+    }
+    .contacts_email-wrap {
+        margin-bottom: 0;
     }
     /* modal */
     .modal_container {
@@ -1141,12 +1158,12 @@ header {
 }
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 11.5vw;
-        line-height: 13.5vw;
+        font-size: 12vw;
+        line-height: 13vw;
     }
     h2 {
-        font-size: 11.5vw;
-        line-height: 13.5vw;
+        font-size: 12vw;
+        line-height: 13vw;
     }
     .container {
         padding: 0 30px;
@@ -1154,14 +1171,19 @@ header {
     header .container {
         padding: 0 20px;
     }
+    .main_wrap-text h3 {
+        font-size: 26px;
+        line-height: 22px;
+        padding-right: 30px;
+    }
     /* about */
     .skills_grid {
         grid-auto-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
     }  
     .about_experience h4 {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 24px;
+        line-height: 32px;
     }
     .about_skills .container {
         padding: 0 40px;
@@ -1179,15 +1201,10 @@ header {
     }
     .contacts_email {
         margin-right: 0;
-        padding: 10px 24px;
+        padding: 10px 22px;
         height: 60px;
+        font-size: 16px;
     }
-    .contacts_email a {
-        font-size: 14px;
-    }
-    /* .contacts_email a::before {
-        display: none;
-    } */
     /* modal */
     .modal_container {
         padding: 10px;
