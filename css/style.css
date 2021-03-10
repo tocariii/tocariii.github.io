@@ -392,9 +392,9 @@ header {
     padding: 0;
     transition: 0.3s ease;
 }
-.contacts_email-wrap:hover {
+/* .contacts_email-wrap:hover {
     padding-right: 60px;
-}
+} */
 .contacts_email {
     padding: 10px 30px;
     height: 62px;
