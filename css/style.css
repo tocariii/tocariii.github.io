@@ -217,7 +217,7 @@ header {
 }
 .about_experience h4 {
     line-height: 44px;
-    text-align: center;
+    text-align: left;
 }
 /* works */
 .works_grid {
@@ -1039,8 +1039,8 @@ header {
         margin: 30px 0 80px;
     }
     .about_experience h4 {
-        font-size: 26px;
-        line-height: 34px;
+        font-size: 20px;
+        line-height: 30px;
     }
     /* works */
     .works_grid {
@@ -1181,10 +1181,6 @@ header {
         grid-auto-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
     }  
-    .about_experience h4 {
-        font-size: 24px;
-        line-height: 32px;
-    }
     .about_skills .container {
         padding: 0 40px;
     }
